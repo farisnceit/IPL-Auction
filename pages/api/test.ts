@@ -4,7 +4,7 @@ import dbConnect from "../../lib/mongodb";
 
 export default async function handler(
   req: NextApiRequest,
-  res: NextApiResponse
+  res: NextApiResponse,
 ) {
   try {
     // Try to connect to the database
