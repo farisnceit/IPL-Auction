@@ -3,7 +3,7 @@ import dbConnect from "../../lib/mongodb"; // Adjust path if necessary
 
 export default async function handler(
   req: NextApiRequest,
-  res: NextApiResponse
+  res: NextApiResponse,
 ) {
   try {
     // Connect to the database
@@ -17,7 +17,7 @@ export default async function handler(
         {},
         {
           projection: { _id: 1, name: 1, email: 1 }, // Selecting _id, name, and email
-        }
+        },
       )
       .toArray();
 
@@ -34,6 +34,9 @@ export default async function handler(
     console.error("MongoDB query error:", error);
     res
       .status(500)
-      .json({ success: false, message: "Failed to fetch data from MongoDB" });
+      .json({
+        success: false,
+        message: "Failed to fetch data from MongoDB User",
+      });
   }
 }
