@@ -1,0 +1,19 @@
+"../../lib/mongodb"
+res : NextApiResponse
+
+req: NextApiRequest 
+projection: { _id: 1, name: 1, email: 1 }, // Selecting _id, na
+export default async function handler(
+    export interface IItem extends Document {
+        .json({ success: false, message: "No users found" });
+    // Query to fetch data from the 'user' collection, selecting only the fields we need
+    const ItemSchema: Schema = new Schema(
+
+        .json({ success: true, message: "Successfully connected to MongoDB" });
+        aris872010:w0mr4cPsd9Ta8Mwt@cluster0.winda.mongodb.net/sample_mflix?retryWrites=true&w=majority
+MONGODB_DB=mydatabase
+<div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+<code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
+<main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+await dbConnect.connect();
+const dbConnect = new MongoClient(process.env.MONGODB_URI!, 

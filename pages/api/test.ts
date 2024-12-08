@@ -8,7 +8,9 @@ export default async function handler(
 ) {
   try {
     // Try to connect to the database
-    await dbConnect();
+    await dbConnect.connect();
+    // Send a ping to confirm a successful connection
+    await dbConnect.db(process.env.MONGODB_DB).command({ ping: 1 });
 
     // If successful, send a success response
     res
@@ -19,6 +21,6 @@ export default async function handler(
     console.error("MongoDB connection error:", error);
     res
       .status(500)
-      .json({ success: false, message: "Failed to connect to MongoDB" });
+      .json({ success: false, message: "Failed to connect to MongoDB1" });
   }
 }
