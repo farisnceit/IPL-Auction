@@ -16,4 +16,7 @@ MONGODB_DB=mydatabase
 <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
 <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
 await dbConnect.connect();
-const dbConnect = new MongoClient(process.env.MONGODB_URI!, 
+const dbConnect = new MongoClient(process.env.MONGODB_URI!c, 
+    MONGODB_URI=mongodb+srv://faris872010:w0mr4cPsd9Ta8Mwt@cluster0.winda.mongodb.net/sample_mflix?retryWrites=true&w=majority
+    MONGODB_DB=ipl_aution
+    MONGODB_SAMPLE_DB=sample_mflix
